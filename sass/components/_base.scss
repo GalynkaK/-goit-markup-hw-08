@@ -1,0 +1,141 @@
+body {
+  background: $accent-color;
+  font-family: "roboto", sans-serif;
+  color: $main-color;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition-property: fill, color, background-color, box-shadow;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+nav {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.section {
+  padding: 60px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 94px 0px;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+  max-width: $phone;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    max-width: $tablet;
+  }
+
+    @media screen and (min-width: $desktop) {
+      max-width: $desktop;
+    }
+}
+
+.link {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 1.14;
+  text-decoration: none;
+  transition: color $duration;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop){
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.list {
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .list__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.list .link:hover,
+.list .link:focus {
+  color: $nav-color;
+}
+
+.section {
+  padding: 60px 0px;
+
+  @media screen and (min-width: $desktop){
+    padding: 94px 0px;
+  }
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  font-weight: 700;
+}
+
+@media screen and (min-width: $desktop) {
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}

@@ -1,0 +1,150 @@
+.footer__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $title-text-color;
+
+  @media screen and (min-width: 1200px){
+    margin-top: 0;
+  }
+}
+
+.footer__container {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer__emblem {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-top: 70px;
+  }
+}
+
+.footer__address {
+  padding-bottom: 8px;
+  color: $accent-color;
+  transition: color $duration;
+
+  &:hover,
+  &:focus {
+    color: $nav-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+}
+
+.footer-contact{
+  padding-bottom: 8px;
+  
+&:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.contacts-footer {
+  align-items: center;
+  margin-left: auto;
+  color: $accent-color;
+  opacity: .6;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+    transition: color $duration;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 9px;
+  }
+}
+
+.contacts-footer:hover,
+.contacts-footer:focus {
+  color: $nav-color;
+}
+
+
+.footer__follow {
+display: block;
+margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    padding-top: 12px;
+    margin-right: 93px;
+    }
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  color: $accent-color;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.social__icon--color {
+  background-color: #2196F3;
+  fill: var(--accent-color);
+}
+
+.social__sitelink{
+    width: 44px;
+    height: 44px;
+    color: #afb1b8;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.footer__action {
+  align-items: center;
+  padding-top: 12px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    width: 570px;
+    height: 86px;
+  }
+}
+
+.footer__form-mail{
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer__join-mail::placeholder{
+  padding-left: 16px;
+}
+
+.footer__join-mail {
+  height: 50px;
+  width: 450px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $title-text-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    padding: 15px 16px; 
+  }
+}
