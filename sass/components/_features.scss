@@ -1,7 +1,6 @@
 .peculiarities__list{
 
   @media screen and (min-width: $tablet) {
-    @include flexible();
     gap: 30px;
     flex-wrap: wrap;
   }
@@ -12,15 +11,15 @@
         margin-bottom: 30px;
       }
   
-    @media screen and (min-width: $tablet) {
-      flex-basis: calc((100% - 30px) / 2);
-    }
-  
+      @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 30px) / 2);
+      }
     @media screen and (min-width: $desktop) {
       flex-basis: calc((100% - 3 * 30px) / 4);
     }
   }
 }
+
 .peculiarities__svg{
   display: flex;
   justify-content: center;
