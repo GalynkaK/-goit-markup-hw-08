@@ -159,8 +159,17 @@
         <div class="container">
           <h2 class="title">Наша команда</h2>
             <ul class="list team__list">
-              <li class="team__link"> 
-                <img src="./imeges/prodact-designer.jpg" alt="Дизайнер продукту" width="270" height="260">
+              <li class="team__link">
+                  <img class="team__link--img" 
+                  srcset="
+                          ./images/demjanenko.jpg            450w,
+                          ./images/demjanenko@2x.jpg         450w,
+                          ./images/demjanenko-tablet.jpg     354w,
+                          ./images/demjanenko-tablet@2x.jpg  354w,
+                          ./images/demjanenko-desktop.jpg    270w,
+                          ./images/demjanenko-desktop@2x.jpg 270w
+                " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/demjanenko-desktop.jpg" alt="Ігор Дем'яненко" />
                   <div class="team__spesialty">
                     <h3 class="team__name">Ігор Дем'яненко</h3>
                     <p class="team__profession" lang="en">Product Designer</p>
@@ -437,5 +446,9 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
 </body>
 </html>
