@@ -1,20 +1,23 @@
 .logo {
   font-family: $logo-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
   letter-spacing: inherit;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
 .header__logo {
+  margin: 15px auto;
   transition: color $duration;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-left: 0px;
     margin-right: 88px;
   }
@@ -43,8 +46,8 @@
   padding-bottom: 20px;
   transition: color $duration;
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 0;
+  @media screen and (min-width: $desktop) {
+    padding: 0 0 20px;
   }
 }
 .footer__logo--blue {

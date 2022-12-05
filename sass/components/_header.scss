@@ -6,8 +6,9 @@
 
 .header__container {
   align-items: center;
+  height: 60px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: $desktop){
     display: flex;
   }
 }
@@ -15,17 +16,16 @@
 .link--current {
   color: $nav-color;
   
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     position: relative;
   }
 }
 
 .link--current::after {
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   content: '';
   position: absolute;
-  bottom: 0;
+  top: 100%;
   left: 0;
   width: 100%;
   height: 4px;
@@ -40,15 +40,24 @@
   align-items: center;
   transition: color $duration;
 
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: $tablet) {
       margin-bottom: 20px;
     }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
       display: flex;
     }
-}
+  }
 
+  @media screen and (max-width: 767px) {
+.contacts__list {
+    display: flex;
+    flex-direction: column-reverse;
+    color: $nav-color;
+    }
+  }
+  
 .nav__link {
   align-items: center;
   margin-left: auto;
@@ -59,7 +68,7 @@
   text-decoration: none;
   transition: color $duration;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
