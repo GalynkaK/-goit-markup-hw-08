@@ -111,21 +111,6 @@ nav {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header__container .link {
-    font-size: 40px;
-    line-height: 1.175;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header__container .contacts__link [href="mailto:info@devstudio.com"] {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.1666666667;
-    letter-spacing: 0.02em;
-    color: #757575;
-  }
-}
 .list {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -281,7 +266,7 @@ address {
           align-items: center;
   height: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -334,7 +319,7 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .contacts__list {
+  .header__container .contacts__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -343,6 +328,17 @@ address {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     color: #2196F3;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__list {
+    display: block;
+    margin: auto 96px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list.contacts__list .list__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 .nav__link {
@@ -366,6 +362,12 @@ address {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header__container .link {
+    font-size: 40px;
+    line-height: 1.175;
+  }
+}
 .link__icon-header {
   margin-right: 10px;
   fill: currentColor;
@@ -374,6 +376,20 @@ address {
   font-size: inherit;
 }
 
+@media screen and (max-width: 767px) {
+  .link__icon-header {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav__link--style {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
 .menu-toggle {
   position: absolute;
   top: 10px;
@@ -500,22 +516,27 @@ address {
     color: #2196F3;
   }
 }
+@media screen and (min-width: 768px) {
+  .mobile-social-list {
+    display: none;
+  }
+}
 .hero {
   min-width: 480px;
   min-height: 400px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2F303A;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/bgr-hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/bgr-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgr-hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgr-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-color: #c4c4c4;
 }
 @media (max-width: 480px -1px) {
@@ -525,8 +546,8 @@ address {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero@2x.jpg);
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile-@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-@2x.jpg);
   }
 }
 @media (min-width: 768px) {
@@ -1594,6 +1615,13 @@ textarea::placeholder {
   .project__flex-emelent {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__flex-emelent {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 

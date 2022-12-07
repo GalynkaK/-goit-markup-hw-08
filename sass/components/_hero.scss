@@ -5,7 +5,7 @@
   padding-bottom: 200px;
   background-color: #2F303A;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url(../imeges/bgr-hero.jpg);
+      rgba(47, 48, 58, 0.4)), url(../images/bgr-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,7 +20,7 @@
 
 
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../images/hero.jpg);
+  url(../images/hero-mobile.jpg);
 
   background-color: #c4c4c4;
 
@@ -28,7 +28,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero@2x.jpg);
+      url(../images/hero-mobile-@2x.jpg);
   }
 
   @media (min-width: $tablet) {

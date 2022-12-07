@@ -1,11 +1,10 @@
 .project__filters {
-
   gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
 
   @media screen and (max-width:767px) {
-  display: flex;
+    display: flex;
     gap: 8px;
     row-gap: 15px;
     justify-content: flex-start;
@@ -13,7 +12,7 @@
     margin-bottom: 40px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
       margin-bottom: 30px;
     }
 }
@@ -39,6 +38,12 @@
 .project__flex-emelent {
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     flex-basis: calc((100% - 30px)/2);
+  }
+}
+
+.project__flex-emelent {
+  @media screen and (min-width: $desktop) {
+  flex-basis: calc((100% - 60px)/3);
   }
 }
 
