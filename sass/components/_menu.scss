@@ -25,14 +25,13 @@
   display: none;
 }
 
+.menu-toggle.is-open .menu-toggle__svg--close {
+  display: block;
+}
 .menu-toggle__svg--close {
   display: none;
   color: $title-text-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-toggle.is-open .menu-toggle__svg--close {
-  display: block;
 }
 
 .menu-toggle:hover .menu-toggle__svg--close,

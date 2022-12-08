@@ -47,9 +47,14 @@
   }
 }
 
+@media screen and (max-width:767px) {
+  .project__flex-emelent {
+    margin-bottom: 30px;
+  }
+}
+
 .project__link{
   display: block;
-  padding-bottom: 20px;
   text-decoration: none;
   border: 1px solid #eee;
 
@@ -59,12 +64,9 @@
   }
 }
 
-
-
 .project__overlay-wrapper {
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 .project__overlay {
@@ -77,6 +79,11 @@
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     padding-top: 49px;
     padding-bottom: 77px;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: 1199px){
+  .project__flex-emelent:first-child .project__name-work {
+  height: 147px;
   }
 }
 
@@ -112,10 +119,8 @@
 }
 
 .project__name-work {
-  margin-top: 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border: 1px solid #EEEEEE;
+  padding: 20px 24px;
+  border: 1px solid #eee;
   border-top: none;
 }
 
