@@ -23,7 +23,6 @@
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $duration, opacity 250ms $duration;
-  min-width: 450px;
   padding: 40px;
   background: $accent-color;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
@@ -34,6 +33,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    width: 450px;
+    height: 609px;
+  }
+  
+  @media screen and(min-width: $desktop) {
+    width: 528px;
+    height: 581px;
   }
 }
 
