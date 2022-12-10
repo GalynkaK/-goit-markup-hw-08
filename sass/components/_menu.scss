@@ -1,9 +1,10 @@
- .menu-container {
-   display: none;
-   opacity: 0;
-   transform: translateX(100%);
-   transition: transform 250ms ease-in-out;
- }
+.menu-container {
+  position: fixed;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+}
 
 .menu-toggle {
   position: absolute;
@@ -50,19 +51,10 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  color: $nav-color;
+  fill: $nav-color;
 }
 
 
-@media screen and (max-width: 767px) {
-  .menu-container {
-    display: none;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-
-  }
-}
 
 @media screen and (max-width: 767px) {
   .menu-container.is-open {
@@ -95,6 +87,9 @@
   line-height: 1.18;
 }
 
+.link--current{
+  color: $nav-color;
+}
 
 .mobile-menu__wrep{
   margin-top: 306px;

@@ -384,7 +384,7 @@ address {
   }
 }
 .menu-container {
-  display: none;
+  position: fixed;
   opacity: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -450,21 +450,9 @@ address {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  color: #2196F3;
+  fill: #2196F3;
 }
 
-@media screen and (max-width: 767px) {
-  .menu-container {
-    display: none;
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 250ms ease-in-out;
-    transition: -webkit-transform 250ms ease-in-out;
-    transition: transform 250ms ease-in-out;
-    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  }
-}
 @media screen and (max-width: 767px) {
   .menu-container.is-open {
     position: absolute;
@@ -494,6 +482,10 @@ address {
   color: #212121;
   font-size: 40px;
   line-height: 1.18;
+}
+
+.link--current {
+  color: #2196F3;
 }
 
 .mobile-menu__wrep {
