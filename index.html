@@ -18,19 +18,13 @@
       <div class="container header__container">
         <a href="./index.html" lang="en" class="link logo header__logo">
           <span class="logo--blue">Web</span><span class="logo--black">Studio</span></a>
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Перемикач меню">
-              <svg class="menu-toggle__svg" width="40" height="40">
-                <use class="menu-toggle__svg--open" href="./images/icons.svg#icon-menu-open"></use>
-              </svg>
-            </button>
-            <div class="menu-container js-menu-container" id="mobile-menu">
-              <nav>
+            <nav >
                 <ul class="list">
                   <li class="list__item"> <a href="./index.html" class="link link--current">Студія</a></li>
                   <li class="list__item"> <a href="./portfolio.html" class="link">Портфоліо</a></li>
                   <li class="list__item"> <a href="" class="link">Контакти</a></li>
                 </ul>
-              </nav>
+            </nav>
                 <ul class="list contacts__list">
                 <li class="list__item">
                 <!-- Посилання на адресу електронної пошти  -->
@@ -38,40 +32,65 @@
                 <a href="mailto:info@devstudio.com" class="link nav__link nav__link--style"> <svg class="link__icon-header link__icon-header--style" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>_
                 </svg>info@devstudio.com </a>
-                
                 </li>
-          
               <li class="list__item">
                 <!-- Посилання на телефонний номер -->
-                
                 <a href="tel:+380961111111" class="link nav__link"> <svg class="link__icon-header" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>_
                 </svg> +38 096 111 11 11</a>
-          
               </li>
               </ul>
-            <ul class="list mobile-social-list">
-              <li class="mobile-social-list__item">
-                <a href="" class="mobile-social-list__link" aria-label="Посилання на Instagram">Instagram</a>
-              </li>
-              <li class="mobile-social-list__item">
-                <a href="" class="mobile-social-list__link" aria-label="Посилання на Twitter">Twitter</a>
-              </li>
-              <li class="mobile-social-list__item">
-                <a href="" class="mobile-social-list__link" aria-label="Посилання на Facebook">Facebook</a>
-              </li>
-              <li class="mobile-social-list__item">
-                <a href="" class="mobile-social-list__link" aria-label="Посилання на LinkedIn">LinkedIn</a>
-              </li>
-            </ul>
-        </div>
-        
-        <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Перемикач меню">
-          <svg class="menu-toggle__svg" width="40" height="40">
-            <use class="menu-toggle__svg--close" href="./images/icons.svg#icon-menu-close"></use>
-          </svg>
-        </button>
-      </div>
+                  <button class="menu-toggle js-open-menu" type="button" aria-expanded="false">
+                    <svg class="menu-toggle__svg" width="40" height="40" aria-label="Меню сайту на мобільному телефоні">
+                      <use class="menu-toggle__svg--open" href="./images/icons.svg#icon-menu-open"></use>
+                    </svg>
+                  </button>
+
+              <!-- МОБІЛЬНЕ МЕНЮ -->
+              <div class="menu-container js-menu-container" id="site-menu">
+                <button class="menu-toggle menu-toggle--position js-close-menu">
+                  <svg class="menu-toggle__svg" width="40" height="40">
+                    <use class="menu-toggle__svg--close" href="./images/icons.svg#icon-menu-close"></use>
+                  </svg>
+                </button>
+              
+                <ul class="site-menu">
+                  <li class="site-menu__item">
+                    <a class="site-menu__link link--current" href="./index.html">Студія</a>
+                  </li>
+                  <li class="site-menu__item">
+                    <a class="site-menu__link" href="./portfolio.html">Портфоліо</a>
+                  </li>
+                  <li class="site-menu__item">
+                    <a class="site-menu__link" href="#">Контакти</a>
+                  </li>
+                </ul>
+                <div class="mobile-menu__wrep">
+                  <ul class="mobile-contacts-list">
+                    <li class="mobile-contacts-list__item">
+                      <a class="mobile-contacts-list__tel" href="tel:+380961111111">+38 096 111-11-11</a>
+                    </li>
+              
+                    <li class="mobile-contacts-list__item">
+                      <a class="mobile-contacts-list__mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                  </ul>
+                  <ul class="list mobile-social-list">
+                    <li class="mobile-social-list__item">
+                      <a href="" class="mobile-social-list__link" aria-label="Посилання на Instagram">Instagram</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                      <a href="" class="mobile-social-list__link" aria-label="Посилання на Twitter">Twitter</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                      <a href="" class="mobile-social-list__link" aria-label="Посилання на Facebook">Facebook</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                      <a href="" class="mobile-social-list__link" aria-label="Посилання на LinkedIn">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
   </header>
   
   <main>
@@ -214,12 +233,12 @@
               <li class="team__link">
                 <img class="team__link--img" 
                 srcset="
-                  ../images/frontend-developer.jpg            450w,
-                  ../images/frontend-developer@2x.jpg         450w,
-                  ../images/frontend-developer-tablet.jpg     354w,
-                  ../images/frontend-developer-tablet@2x.jpg  354w,
-                  ../images/frontend-developer-desktop.jpg    270w,
-                  ../images/frontend-developer-desktop@2x.jpg 270w
+                  ./images/frontend-developer.jpg            450w,
+                  ./images/frontend-developer@2x.jpg         450w,
+                  ./images/frontend-developer-tablet.jpg     354w,
+                  ./images/frontend-developer-tablet@2x.jpg  354w,
+                  ./images/frontend-developer-desktop.jpg    270w,
+                  ./images/frontend-developer-desktop@2x.jpg 270w
                   " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   src="./images/frontend-developer.jpg" alt="Ольга Рєпіна" />
 
@@ -261,13 +280,13 @@
             
               <li class="team__link">  
                 <img class="team__link--img" srcset="
-                ../images/marketing.jpg           450w,
-                ../images/marketing@2x.jpg         450w,
-                ../images/marketing-tablet.jpg     354w,
-                ../images/marketing-tablet@2x.jpg  354w,
-                                          ./images/marketing-desktop.jpg    270w,
-                                          ./images/marketing-desktop@2x.jpg 270w
-                                " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                ./images/marketing.jpg           450w,
+                ./images/marketing@2x.jpg         450w,
+                ./images/marketing-tablet.jpg     354w,
+                ./images/marketing-tablet@2x.jpg  354w,
+                ./images/marketing-desktop.jpg    270w,
+                ./images/marketing-desktop@2x.jpg 270w
+                " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   src="./images/marketing-desktop.jpg" alt="Микола Тарасов" />
                
                 <div class="team__spesialty">
@@ -309,13 +328,13 @@
               <li class="team__link">
                 <img class="team__link--img" 
                 srcset="
-                                          ./images/ui-designer.jpg            450w,
-                                          ./images/ui-designer@2x.jpg         450w,
-                                          ./images/ui-designer-tablet.jpg     354w,
-                                          ./images/ui-designer-tablet@2x.jpg  354w,
-                                          ./images/ui-designer-desktop.jpg    270w,
-                                          ./images/ui-designer-desktop@2x.jpg 270w
-                                " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  ./images/ui-designer.jpg            450w,
+                  ./images/ui-designer@2x.jpg         450w,
+                  ./images/ui-designer-tablet.jpg     354w,
+                  ./images/ui-designer-tablet@2x.jpg  354w,
+                  ./images/ui-designer-desktop.jpg    270w,
+                  ./images/ui-designer-desktop@2x.jpg 270w
+                  " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                   src="./images/ui-designer.jpg" alt="Михайло Єрмаков" />
                
                 <div class="team__spesialty">

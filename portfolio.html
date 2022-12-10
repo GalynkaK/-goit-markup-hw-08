@@ -308,8 +308,9 @@
     </section>
   </main>
     
-    <footer class="section footer__section">
-      <div class="container footer__container">
+  <footer class="section footer__section">
+    <div class="container footer__container">
+      <div class="footer__container--tablet">
         <div class="footer__emblem">
           <div class="logo link footer__logo">
             <a href="./index.html" lang="en">
@@ -320,15 +321,15 @@
               <li class="footer__address"> <a class="footer__address" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки,
                   26</a></li>
-              <li class="footer-contact"><a href="mailto:info@devstudio.com" class="contacts-footer">info@devstudio.com</a>
-              </li>
+              <li class="footer-contact"><a href="mailto:info@devstudio.com"
+                  class="contacts-footer">info@devstudio.com</a> </li>
               <li class="footer-contact"><a href="tel:+380961111111" class="contacts-footer">+38 096 111 11 11</a></li>
             </ul>
           </address>
         </div>
         <div class="footer__follow">
           <p class="footer__title">приєднуйтесь</р>
-          <ul class="list social">
+          <ul class="list footer__social">
             <li class="social__link">
               <a class="social__sitelink" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                 <svg class="social__icon" width="44" height="44">
@@ -359,19 +360,23 @@
             </li>
           </ul>
         </div>
-    
-        <div class="footer__action">
-          <p class="footer__title">Підпишіться на розсилку</p>
-          <form class="footer__form-mail" autocomplete="off">
-            <input class="footer__join-mail" type="mail" name="mail" placeholder="E-mail">
-            <button class="button footer__btn-footer">Підписатися <svg class="footer__follow-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-icon-send">_</use>
-              </svg>
-            </button>
-          </form>
-        </div>
       </div>
-    </footer>
+      <div class="footer__action">
+        <p class="footer__title">Підпишіться на розсилку</p>
+        <form class="footer__form-mail" autocomplete="off">
+          <input class="footer__join-mail" type="mail" name="mail" placeholder="E-mail">
+          <button class="button footer__btn-footer">Підписатися <svg class="footer__follow-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-icon-send">_</use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
 </body>
     
     
