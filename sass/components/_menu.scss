@@ -3,7 +3,7 @@
   opacity: 0;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-
+  pointer-events: none;
 }
 
 .menu-toggle {
@@ -17,6 +17,7 @@
   border: none;
   cursor: pointer;
   z-index: 9;
+  
 }
 
 @media screen and (min-width: $tablet) {
@@ -29,8 +30,8 @@
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  height: 40px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,5 +144,6 @@
     color: $nav-color;
   }
 }
+
 
 

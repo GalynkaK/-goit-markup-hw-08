@@ -392,6 +392,7 @@ address {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  pointer-events: none;
 }
 
 .menu-toggle {
@@ -424,8 +425,8 @@ address {
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  height: 40px;
+  width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -990,6 +991,11 @@ address {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (max-width: 767px) {
+  .team__link {
+    margin-bottom: 30px;
+  }
+}
 
 .team__specialty {
   padding-top: 28px;
@@ -1076,7 +1082,7 @@ address {
   background-color: #2196F3;
 }
 
-.footer .social__icon {
+.footer__section .social__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1102,6 +1108,7 @@ address {
   top: 0;
   left: 0;
   width: 100%;
+  min-width: 450px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1130,17 +1137,8 @@ address {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-@media (min-width: 450px) {
-  .backdrop__modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
-    min-width: 450px;
-    height: 609px;
-  }
+  width: 450px;
+  height: 609px;
 }
 @media screen and (min-width: 1200px) {
   .backdrop__modal {
@@ -1238,7 +1236,7 @@ textarea::placeholder {
 .backdrop__form-field input,
 .backdrop__form-input textarea {
   display: block;
-  width: 448px;
+  width: 370px;
   height: 40px;
   margin-bottom: 10px;
   padding-left: 42px;
@@ -1249,6 +1247,12 @@ textarea::placeholder {
   transition: border 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .backdrop__form-field input,
+.backdrop__form-input textarea {
+    width: 448px;
+  }
 }
 
 .backdrop__form-field input::-webkit-input-placeholder {
@@ -1623,11 +1627,6 @@ textarea::placeholder {
 
 .project__btn-filters {
   display: inline;
-}
-@media screen and (max-width: 767px) {
-  .project__btn-filters {
-    margin-bottom: 40px;
-  }
 }
 
 @media screen and (min-width: 768px) {
