@@ -48,6 +48,7 @@
   @media (min-width: $desktop) {
     min-width: $desktop;
     min-height: 600px;
+    max-width: 1600px;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero-desktop.jpg);
 
